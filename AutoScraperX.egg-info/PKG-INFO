@@ -1,3 +1,18 @@
+Metadata-Version: 2.1
+Name: AutoScraperX
+Version: 0.1.0
+Summary: A common spider tool based on Selenium
+Home-page: https://github.com/chenziying1/AutoScraperX
+Author: czy
+Author-email: 1060324818@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: selenium
+Requires-Dist: beautifulsoup4
+Requires-Dist: undetected-chromedriver
+
 # AutoScraperX
 
 AutoScraperX 是一个基于 Selenium 和 undetected_chromedriver 的通用爬虫框架，旨在提供强大而灵活的 Web 自动化功能。它支持自动化浏览、元素操作、页面截图、cookie 管理等功能，适用于各种爬取任务。
