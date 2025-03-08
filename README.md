@@ -27,7 +27,7 @@ pip install selenium undetected-chromedriver beautifulsoup4
 ### 初始化爬虫
 
 ```
-from common_spider import Spider
+from AutoScraperX import common_spider  # 确保 Spider 类已正确导入
 
 options = {
     'headless': True,  # 以无头模式运行
@@ -36,7 +36,7 @@ options = {
     'driver_executable_path': "C:\\Path\\To\\chromedriver.exe"
 }
 
-spider = Spider(options)
+spider = common_spider.Spider(options)
 ```
 
 ### 打开网页

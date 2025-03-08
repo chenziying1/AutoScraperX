@@ -90,7 +90,7 @@ class Spider():
             defualt_options.add_argument('--start-maximized')
         
         # 设置浏览器选项
-        defualt_options.binary_location = options.get('binary_location', "C:\Users\Administrator\AppData\Local\Google\Chrome\Bin\chrome.exe")
+        defualt_options.binary_location = options.get('binary_location', r"C:\Users\Administrator\AppData\Local\Google\Chrome\Bin\chrome.exe")
              
         if options.get('fastest', False):
             defualt_options.add_argument("--disable-extensions")

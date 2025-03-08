@@ -8,17 +8,22 @@ version    :v0.01
 email      :1060324818@qq.com
 '''
 
-from AutoScraperX import Spider  # 确保 Spider 类已正确导入
+from AutoScraperX import common_spider  # 确保 Spider 类已正确导入
 
 def main():
     # 创建 Spider 实例
-    spider = Spider(
-        headless=True,  # 是否无头模式运行
-        proxy=None,  # 可选代理设置
-        timeout=10,  # 超时时间（秒）
-        user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        wait_time=5  # 页面加载后等待时间
-    )
+    # 配置爬虫选项
+    options = {
+        "driver_executable_path": "chromedriver\\chromedriver.exe",  # 替换为你的 chromedriver 路径
+        "user_data_dir": "data\\User Data",  # Chrome 用户数据路径
+        "profile_directory": "Default",  # Chrome 配置文件
+        "headless": False,  # 是否启用无头模式（True = 不显示浏览器窗口）
+        "maximized": True,  # 是否最大化窗口
+        "logging_level": 2  # 日志级别
+    }
+
+    # 创建 Spider 实例
+    spider = common_spider.Spider(options=options)
     
     try:
         # 打开网页
