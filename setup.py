@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="AutoScraperX",  # 你的库名称
-    version="0.1.1",  # 版本号
+    version="0.1.2",  # 版本号
     author="czy",
     author_email="1060324818@qq.com",
     description="A common spider tool based on Selenium",
